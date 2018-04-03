@@ -1078,8 +1078,8 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		width: 45em;
-		max-width: 100%;
+		width: 100%;
+		max-width: 1200px;
 		margin: 0 auto 2em auto;
 	}
 
@@ -1092,9 +1092,10 @@
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
 			transform: translateX(0);
-			width: 50%;
+			width:33%;
 			position: relative;
 			opacity: 1.0;
+			
 		}
 
 			.gallery article img {
@@ -1584,8 +1585,8 @@
 	}
 
 		.main > .content {
-			width: 45em;
-			max-width: calc(100% - 4em);
+			width: 100%;
+			max-width:1200px;
 			margin: 0 auto;
 		}
 
@@ -1820,7 +1821,7 @@
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/code1.jpg");
+		background: url("images/overlay.png"), url("../../images/ux.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -1849,6 +1850,7 @@
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in; 
+	padding:10px;
 }
 article:hover .grid-hover{opacity:1;}	
 .grid-hover p, .grid-hover h3{ color:#fff;}
