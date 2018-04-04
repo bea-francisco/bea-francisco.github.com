@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("font-awesome.min.css");
+/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");*/
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+/*
+@import url("font-awesome.min.css");*/
 
 /*
 	Big Picture by HTML5 UP
@@ -476,7 +478,7 @@
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Source Sans Pro", "sans-serif";
+		font-family: "Nunito", "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -564,7 +566,7 @@
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
+		color: #000;
 	}
 
 	sub {
@@ -1854,6 +1856,9 @@
 }
 article:hover .grid-hover{opacity:1;}	
 .grid-hover p, .grid-hover h3{ color:#fff;}
+.grid-hover h3 span{    font-weight: bold;
+    font-size: 16px;
+    color: #ccc;}
 .grid-hover p {font-size: .8em; line-height: 1.2em}
 .grid-hover h3{margin:20px;}
 /* Contact */
