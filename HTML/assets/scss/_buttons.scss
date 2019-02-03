@@ -1,0 +1,40 @@
+.button{
+ font-weight: 600;
+    color:#fff;
+    padding:.8em 2em;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button-primary{
+    background:$primary-color;
+   
+    display: inline-block;
+    box-shadow: 0px 4px 20px rgba(104, 0, 19, 0.2);
+    &:hover{
+        text-decoration:none;
+        background: #000;
+        color:#fff
+    }
+}
+.button-secondary{
+    background:#000;
+    color:#fff;
+    border:none;
+    &:hover{
+        text-decoration:none;
+        background:#999;
+        color:#fff
+    }
+}
+.button-link{
+    background:#000;
+    color:#fff;
+    padding:1em 2em;
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+        color:#fff;
+        text-decoration: none;
+       
+    }
+}

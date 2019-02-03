@@ -1,0 +1,22 @@
+.svg{
+    width:50px;
+    margin: 1em auto;
+    display: block;
+    @include respond-above(sm){
+        margin: 1em 0;
+    }
+}
+.footer{
+    &__text{
+        color:#fff;
+        margin:0;
+        text-align: center;
+        @include respond-above(sm){
+            text-align: left
+        }
+    }
+    &__link{
+        color:#fff;
+        text-decoration:none
+    }
+}

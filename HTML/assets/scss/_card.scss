@@ -1,0 +1,26 @@
+.card-shadow{
+    box-shadow: 0 0 20px rgba(104, 0, 19, 0.3);
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+   //max-width 1024
+@include respond-below(md){
+    .card-flex{
+        min-height: 370px;
+        
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+    
+    }
+}
+//min-width 1024
+@include respond-above(md){
+    .card-flex{
+        min-height: 170px;
+      
+    
+    }
+}

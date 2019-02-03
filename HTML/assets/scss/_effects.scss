@@ -1,0 +1,88 @@
+.hover-effect{
+    position: relative;
+    overflow: hidden;
+    
+& p{
+    margin-bottom: .5rem;
+}
+&__title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:.5em 0;
+}
+    //min-width 1024
+    @include respond-above(md){
+        &__title, &__img{
+       
+            -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+            transition: transform 0.35s, color 0.35s;
+           
+        }
+        &__img{
+            height: 70px;
+        }
+        
+        &:after{
+            -webkit-transform: translate3d(0,50%,0);
+            transform: translate3d(0,50%,0);
+            opacity: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            content:'';
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s; 
+        }
+        &__item{
+       
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding:.5em;
+            width: 100%;
+            opacity: 0;
+            -webkit-transform: translate(0px, 200px);;
+            transform: translate(0px, 200px);;
+            -webkit-transition: opacity 0.35s,
+             -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+        
+        
+        }
+    &:hover  &__title{
+      
+       transform: translate(0px, -200px);
+       z-index: 3;
+
+        }
+        &:hover &__img{
+            -webkit-transform: translate(0px, -200px);
+            transform: translate(0px, -200px);
+        }
+        
+        &:hover &__item{
+            
+                opacity: 1;
+                -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+                z-index: 2;
+                color:#fff;
+                font-size:.9rem
+            } 
+    
+        &:hover:after{
+            background:$primary-color;
+           opacity:1;
+           -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }    
+    }
+ 
+    
+    
+}

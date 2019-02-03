@@ -1,0 +1,32 @@
+body{
+    font-family:$body-font-family;
+    font-weight:normal;
+    color:#000;
+    font-size:1rem
+}
+
+.h2-default{
+   text-transform: uppercase;
+   font-weight: bold;
+   text-align:center;
+   margin-bottom:2em;
+   & span{
+       color:$primary-color;
+       
+   }
+}
+.h2-small{
+    text-transform: uppercase;
+    font-weight: bold;
+   font-size: 1.3rem
+}
+.h2-light{
+    color:#fff; text-transform: uppercase;
+    font-weight: bold;
+    text-align:center;
+    margin-bottom:1em;
+}
+.quote{
+    font-style: italic;
+    
+}

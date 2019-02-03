@@ -1,0 +1,13 @@
+//min-width 
+@include respond-above(sm){
+.form-container{
+    max-width: 400px;
+    margin:auto;
+}}
+.form__label{
+        color:#fff
+    }
+.form-control{
+    border:none;
+    border-radius: 0
+}
