@@ -107,7 +107,7 @@ main {
 }
 
 .gallery__content {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 1200px) {
