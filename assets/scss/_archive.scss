@@ -1,0 +1,45 @@
+.archive-gallery {
+    @include respond-above(lg) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    & article {
+        @include respond-above(lg) {
+            width: 32%;
+        }
+
+        position: relative;
+        margin-bottom: 2rem;
+
+        &:hover {
+            opacity: .5
+        }
+
+        & img {
+            max-width: 100%;
+        }
+    }
+
+    & h3 {
+        color: #000;
+        margin: .5rem 0 0 0;
+        font-size: .9rem
+    }
+
+    & p {
+        color: #000;
+        font-size: .9rem;
+        margin-bottom: 0
+    }
+
+    &__link {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+}

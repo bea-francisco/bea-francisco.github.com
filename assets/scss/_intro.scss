@@ -1,0 +1,22 @@
+.intro {
+
+
+    @include respond-above(lg) {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        & p {
+            font: normal 1rem Lato;
+            margin-bottom: .5rem
+        }
+
+
+    }
+
+
+
+}

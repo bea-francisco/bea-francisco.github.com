@@ -1,0 +1,51 @@
+/* Header */
+
+#header {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    
+    box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+    padding:.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h1 {
+        font: normal 1.5rem Poppins;
+    cursor: default;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    margin: 0
+
+        
+    }
+
+    & nav {
+       & ul{margin:0}
+
+        & li {
+            display: inline-block;
+            margin-left: 0.5em;
+            font-size: 0.9em;
+            & a{
+                display: block;
+                color: inherit;
+                text-decoration: none;
+            
+                padding: 0 0.5em 0 0.5em;
+                outline: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

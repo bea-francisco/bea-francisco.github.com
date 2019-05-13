@@ -1,0 +1,32 @@
+#work {
+    padding: $gutter;
+}
+
+.gallery {
+    padding-bottom: 4em;
+
+    &__img {
+        flex-grow: 2;
+
+        & img {
+            max-width: 100%;
+        }
+    }
+
+    &__content {
+        margin-bottom: $gutter;
+
+        @include respond-above(lg) {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            &:nth-child(2) .gallery__img {
+                margin-right: -190px;
+                overflow: hidden;
+            }
+        }
+
+
+    }
+}
