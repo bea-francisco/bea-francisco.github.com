@@ -66,7 +66,7 @@
 
 main {
   margin-top: 50px;
-  padding: 1em;
+  padding: 2em;
 }
 
 @media (min-width: 1200px) {
@@ -102,19 +102,35 @@ main {
           flex-grow: 2;
 }
 
+@media (max-width: 1199px) {
+  .gallery__img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 .gallery__img img {
   max-width: 100%;
 }
 
 .gallery__content {
   margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 1200px) {
   .gallery__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -124,9 +140,13 @@ main {
     margin-right: -190px;
     overflow: hidden;
   }
+  .gallery__content:nth-child(3) .gallery__img {
+    margin-left: -140px;
+    overflow: hidden;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .archive-gallery {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -143,7 +163,7 @@ main {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .archive-gallery article {
     width: 32%;
   }
@@ -202,6 +222,7 @@ h3 {
 
 h4 {
   font: bold 1.1rem Poppins, Arial;
+  margin-top: 2em;
 }
 
 .link {
@@ -268,10 +289,31 @@ h4 {
 
 .case__header-glofs {
   background-image: url(../img/Glofs.png);
-  background-position: center -200px;
+  background-position: left top;
+}
+
+@media (min-width: 1200px) {
+  .case__header-glofs {
+    background-position: center -200px;
+  }
 }
 
 .case__header-glofs:before {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.case__header-camara {
+  background-image: url(../img/Camara.jpg);
+  background-position: left top;
+}
+
+@media (min-width: 1200px) {
+  .case__header-camara {
+    background-position: left -100px;
+  }
+}
+
+.case__header-camara:before {
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -286,12 +328,24 @@ h4 {
   }
 }
 
+.case-desc {
+  margin-right: 2em;
+}
+
 .img-responsive {
   max-width: 100%;
 }
 
 .text-center {
   text-align: center;
+}
+
+.mt {
+  margin-top: 2em;
+}
+
+.mb {
+  margin-bottom: 2em;
 }
 
 footer {

@@ -1,12 +1,12 @@
 .archive-gallery {
-    @include respond-above(lg) {
+    @include respond-above(md) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
     & article {
-        @include respond-above(lg) {
+        @include respond-above(md) {
             width: 32%;
         }
 

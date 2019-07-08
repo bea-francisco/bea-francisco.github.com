@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <title>Beatriz Francisco </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="/assets/css/custom.min.css" />
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="index.html">Beatriz Francisco</a> </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#intro">Intro</a></li>
+
+                <li><a href="index.html#work">Proyectos</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+                <li><a href="Cv-Beatriz-Francisco.pdf">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Intro -->
+    <main>
+        <section class="case__header case__header-camara">
+            <h2>CÁMARA DE COMERCIO DE BILBAO</h2>
+            <p>Prototipado | Diseño | HTML | CSS | Angular</p>
+        </section>
+
+        <div class="case-content">
+            <div class="case-desc">
+                <h3>Descripción</h3>
+
+
+                <p>Proyecto: Herramienta interna para la gestión de la escuela universitaria de la Cámara de Comercio de Bilbao</p>
+                <p>Con esta herramienta gestionan desde la matriculación e información de los alumnos a la facturación de los cursos universitarios </p>
+               
+
+            </div>
+            <div class="case-extra">
+                <h3>FUNCIONES</h3>
+                <ul>
+                    <li>Analisis funcional</li>
+                    <li>UX/UI Design</li>
+                   
+                    <li>Front end designer (HTML/SASS/Angular)</li>
+
+                </ul>
+
+            </div>
+        </div>
+        <h4>Problemática</h4>
+        <ul>
+            <li>El cliente está acostumbrado a la utilización de su anterior aplicación y es bastante reticente al cambio ya que tiene 
+            todos los pasos interiorizados</li>
+            <li>La aplicación está conectada con Navision. Hay algunos campos que no se pueden cambiar por exigencias de Navision</li>
+            <li>Este proyecto ha ido creciendo durante más de 10 años. Hay nuevos apartados y funcionalidades que se han incluido sin ningún orden ni lógica</li>
+        </ul>
+      
+        <h4>El proceso</h4>
+
+        
+        <p>Se va a ir desarrollando la aplicación por fases, empezando por el módulo de "Alumnos".  Se analiza cada una de  las pantallas actuales para tener una visión global y poder plantear una nueva estructura que muestre toda la información del alumno mejor organizada y agrupada en pestañas</p>
+
+        <p class="text-center mt"><img src="assets/img/CamaraWireframes.JPG" alt="" class="img-responsive" ></p>
+
+<p>Se diseña un prototipo  y se realiza una reunión con los usuarios potenciales de la aplicación, para que validen la nueva estructura. Se les asigna diferentes tareas a los usuarios para comprobar que encuentrar la información dentro de la nueva estructura</p>
+     <p>Se plantea la generación de un dashboard con los datos básicos del alumno. Se  tienen reuniones con varios usuarios de la aplicación para incluir los datos que consideran más importantes</p>  
+
+     <p><a href="https://www.figma.com/proto/A071yjhKMGXXloWMMrLq8r/CamaraWireframes2?node-id=55%3A2&viewport=109%2C304%2C0.04496099427342415&scaling=scale-down-width" class="link" target="_blank">  Ver prototipo</a> </p>
+    <p class="text-center mt mb">
+            <img src="assets/img/Camara.jpg" title="" alt="" class="img-responsive" />
+
+        </p>
+
+<p>El siguiente paso es traducir los diseños a HTML y SASS para que se pueda empezar a programar.</p>
+       
+        <p>Una vez realizado todo el desarrollo de la aplicación en angular trabajo sobre ella para retocar los
+            desajustes producidos durante la fase de desarrollo.</p>
+
+
+    
+
+    </main>
+
+    <footer>
+
+        <p><a href="mailto:bea.francisco@gmail.com" class="link">bea.francisco@gmail.com</a> </p>
+        <p><a href="tel:630768633" class="link"> 630768666</a></p>
+        <p><a href="http://www.linkedin.com/in/beatriz-francisco-tobar-1405b564" target="_blank"><img
+                    src="images/linkedin.png" alt=""></a></p>
+    </footer>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        // ------------------------------
+        // https://twitter.com/mattsince87
+        // ------------------------------
+
+        function scrollNav() {
+            $('nav a').click(function () {
+
+                //Animate
+                $('html, body').stop().animate({
+                    scrollTop: $($(this).attr('href')).offset().top - 50
+                },
+                    400);
+                return false;
+            });
+
+        }
+        scrollNav();
+
+    </script>
+</body>
+
+</html>

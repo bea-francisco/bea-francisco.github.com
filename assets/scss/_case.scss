@@ -46,7 +46,25 @@
 
         &-glofs {
             background-image: url(../img/Glofs.png);
-            background-position: center -200px;
+            background-position: left top;
+
+            @include respond-above(lg) {
+                background-position: center -200px;
+            }
+
+            &:before {
+                background: rgba(0, 0, 0, 0.7);
+
+            }
+
+        }
+        &-camara{
+            background-image: url(../img/Camara.jpg);
+            background-position: left top;
+
+            @include respond-above(lg) {
+                background-position: left -100px;
+            }
 
             &:before {
                 background: rgba(0, 0, 0, 0.7);
@@ -63,5 +81,8 @@
             padding-bottom: $gutter;
             margin-bottom: $gutter;
         }
+    }
+    &-desc{
+        margin-right: 2em
     }
 }
